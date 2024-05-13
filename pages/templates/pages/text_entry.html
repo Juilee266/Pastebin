@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+
+<h1>Pastebin</h1>
+
+<form action="/get_link/" method="POST">
+  <p><label for="data">Enter your text here:</label></p>
+  <textarea id="data" name="data" rows="20" cols="100">Your text</textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button to get a unique link</p>
+
+{% endblock page_content %}
